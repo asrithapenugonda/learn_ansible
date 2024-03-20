@@ -1,7 +1,7 @@
 - name: demo
   hosts: all
   tasks:
-    - name: print Hlo
+    - name: 'print Hlo'
       ansible.bulitin.debug:
         msg: "Hello world"
 
