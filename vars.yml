@@ -1,8 +1,10 @@
 - name: Declare variable at play level
-  hosts: All
-  Vars:
-  URL: play.example.com
+  hosts: all
+  vars:
+    URL: example.play.com
+
   tasks:
     - name: Calling Variable
       ansible.builtin.debug:
-      msg: URL == {{URL}}
+        msg: URL == {{URL}}
+
