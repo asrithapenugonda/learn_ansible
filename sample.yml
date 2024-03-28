@@ -1,5 +1,7 @@
 - name: demo
   hosts: all
+  vars:
+    URL: example.file.com
   tasks:
     - name: print messge
       ansible.builtin.debug:

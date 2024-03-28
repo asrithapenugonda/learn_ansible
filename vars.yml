@@ -26,15 +26,15 @@
 
 
 
-- name: declaring my own variable
+- name: declaring from another file
   hosts: all
-  vars:
-    love: bujji
+  vars_files:
+    sample.yml
 
   tasks:
-    - name: declaring bujji to variable
+    - name: accesing variable form another file
       ansible.builtin.debug:
-        msg: name == {{love}}
+        msg: URL == {{URL}}
 
 
 
