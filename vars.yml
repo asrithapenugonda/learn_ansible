@@ -32,9 +32,9 @@
     love: bujji
 
   tasks:
-    - name: declaring bujji
-      ansible.bulitin.debug:
-       msg: name == {{love}}
+    - name: declaring bujji to variable
+      ansible.builtin.debug:
+        msg: name == {{love}}
 
 
 
