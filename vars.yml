@@ -32,7 +32,7 @@
     - sample.yml
 
   tasks:
-    - name: accesing variable form another file
+    - name: acces a variable
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
