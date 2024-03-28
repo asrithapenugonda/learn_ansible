@@ -30,7 +30,7 @@
   hosts: all
   vars_files:
     - sample.yml
-
+  
   tasks:
     - name: acces a variable
       ansible.builtin.debug:
