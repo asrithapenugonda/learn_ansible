@@ -2,13 +2,12 @@
   hosts: all
   vars:
     URL: example.play.com
-  vars_files:
-    - sample.yml
+
 
   tasks:
     - name: Calling varaiable at play level
       ansible.builtin.debug:
-        msg: URL == {{url}}
+        msg: URL == {{URLl}}
 
 
 
