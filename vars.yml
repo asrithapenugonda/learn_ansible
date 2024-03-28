@@ -29,7 +29,7 @@
 - name: declaring from another file
   hosts: all
   vars_files:
-    sample.yml
+    - sample.yml
 
   tasks:
     - name: accesing variable form another file
