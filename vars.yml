@@ -10,7 +10,7 @@
 
 - name: declaring a varaiable at task level
   hosts: all
-
+  
   tasks:
     - name: accessing a variable at task level
       ansible.builtin.debug:
