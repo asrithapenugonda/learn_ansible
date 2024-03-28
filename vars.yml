@@ -34,7 +34,7 @@
   tasks:
     name: declaring bujji
     ansible.bulitin.debug:
-      msg: {{love}}
+      msg: name == {{love}}
 
 
 
