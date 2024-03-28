@@ -2,7 +2,6 @@
   hosts: all
   vars:
     URL: example.play.com
-
   tasks:
     - name: accessing a variable at play level
       ansible.builtin.in:
