@@ -23,7 +23,7 @@
 - name : declaring a variable at file level
   hosts: all
   vars_files:
-    - \learn_ansible\sample.yml
+    - var.yml
 
   tasks:
     - name : accessing  a variable at file level

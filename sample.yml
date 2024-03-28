@@ -1,10 +1,16 @@
+
+
+
+
 - name: demo
   hosts: all
-  vars:
-    url: example.file.com
 
   tasks:
     - name: print messge
       ansible.builtin.debug:
         msg: "hello bujji"
+
+
+
+
 
