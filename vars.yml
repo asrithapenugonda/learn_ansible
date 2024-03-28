@@ -24,17 +24,12 @@
 
 
 
-
-
-- name: declaring from another file
+- name: declaring a variable from other file
   hosts: all
   vars_files:
     - sample.yml
-  
+
   tasks:
-    - name: acces a variable
+    - name: accessing a varaibale from other file
       ansible.builtin.debug:
         msg: URL == {{URL}}
-
-
-
