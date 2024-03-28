@@ -1,22 +1,19 @@
-- name: Declare a variable at play level
+- name: declaring a varaible at play level
   hosts: all
   vars:
     URL: example.play.com
 
-
   tasks:
-    - name: Calling varaiable at play level
-      ansible.builtin.debug:
-        msg: URL == {{URLl}}
+    - name: accessing a variable at play level
+      ansible.builtin.in:
+        msg: URL == {{URL}}
 
 
-
-
-
-- name: Declare variable at task level
+- name: declaring a varaiable at task level
   hosts: all
+
   tasks:
-    - name: Calling varaible at task level
+    - name: accessing a variable at task level
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
@@ -24,13 +21,12 @@
         URL: example.task.com
 
 
-
-- name: declaring a variable from other file
+- name : declaring a variable at file level
   hosts: all
   vars_files:
     - sample.yml
 
   tasks:
-    - name: accessing a varaibale from other file
+    - name : accessing  a variable at file level
       ansible.builtin.debug:
         msg: URL == {{URL}}
