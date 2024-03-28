@@ -3,8 +3,8 @@
   vars:
     URL: example.play.com
   tasks:
-    - name: declaring a variable at play level
-      ansible.builtin.in:
+    - name: accessing a variable at play level
+      ansible.builtin.debug:
         msg: URL == {{URL}}
 
 
