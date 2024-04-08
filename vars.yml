@@ -59,3 +59,7 @@
     - name: Access a fact
       ansible.builtin.debug:
         msg: ansible-hostname == {{ansible_fqdn}}
+
+- name: Print all available facts
+  ansible.builtin.debug:
+    var: ansible_facts
