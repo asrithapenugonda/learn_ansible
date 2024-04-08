@@ -37,3 +37,15 @@
     - name: Accesing a varaiable from inventory file
       ansible.builtin.debug:
         msg: URL == {{URL}}
+
+
+
+- name: accessing a variable at task level
+  hosts: all
+  tasks:
+    - name: Accesing and declaring a varaiable at task level
+      ansible.builtin.debug:
+        msg: URL == {{URL}}
+
+      vars:
+        URL: Hello everyone.com
