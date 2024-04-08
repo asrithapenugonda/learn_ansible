@@ -49,3 +49,13 @@
 
       vars:
         URL: "{Hello everyone.com}"
+
+
+
+
+- name: Access a fact
+  hosts: all
+  tasks:
+    - name: Access a fact
+      ansible.builtin.debug:
+      msg: ansible-hostname == {{ansible_fqdn}}
