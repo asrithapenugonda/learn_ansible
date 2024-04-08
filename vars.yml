@@ -48,4 +48,4 @@
         msg: URL == {{URL}}
 
       vars:
-        URL: Hello everyone.com
+        URL: "{Hello everyone.com}"
