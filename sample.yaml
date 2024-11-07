@@ -1,0 +1,6 @@
+- name: Printing a message
+  hosts: all
+  tasks:
+    - name: printing a message
+      ansible.bulitin.debug:
+        msg: "Hello World"
