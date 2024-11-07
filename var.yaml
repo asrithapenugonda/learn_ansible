@@ -20,7 +20,7 @@
 
 - name: Declaring a variable in file
   hosts: all
-  var_files:
+  vars_files:
     - vars.yaml
   tasks:
     - name: Acessing a variable from files
