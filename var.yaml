@@ -35,4 +35,4 @@
   tasks:
     - name: Accessing  a variable from inventory file
       ansible.builtin.debug:
-        msg: URL == {{URL}
+        msg: URL == {{URL}}
