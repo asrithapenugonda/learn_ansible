@@ -52,5 +52,5 @@
       ansible.builtin.set_fact:
         OUTPUT: "{{out.stdout}}"
     - name: printing the set_fact
-      nsible.builtin.debug:
+      ansible.builtin.debug:
           msg: "{{OUTPUT}}"
