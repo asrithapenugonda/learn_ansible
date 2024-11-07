@@ -48,3 +48,9 @@
     - name: Printing out
       ansible.builtin.debug:
         msg: "{{out.stdout}}"
+    - name: set_fact
+      ansible.builtin.set_fact:
+        OUTPUT: "{{out.stdout}}"
+    - name: printing the set_fact
+      nsible.builtin.debug:
+          msg: "{{OUTPUT}}"
