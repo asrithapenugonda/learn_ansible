@@ -36,3 +36,15 @@
     - name: Accessing  a variable from inventory file
       ansible.builtin.debug:
         msg: URL == {{URL}}
+
+
+
+- name: Declaring a register
+  hosts: all
+  tasks:
+    - name: Run a shell command
+      ansible.builtin.shell: uptime
+      register: out
+    - name: Printing out
+      ansible.builtin.msg:
+        msg: "{{out}}"
