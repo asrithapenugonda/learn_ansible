@@ -1,3 +1,8 @@
 - name: Role demo
   ansible.builtin.debug:
     msg: "Hello,from demo role"
+
+
+- name: Acessing a variable from roles/vars
+  ansible.builtin.debug:
+    msg: URL == {{URL}}
