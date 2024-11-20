@@ -20,7 +20,7 @@
     - name: demo on three list map
       debug:
         msg:
-          the measurements are {{ item.length.breadth }}
+          the length is  {{ item.length }} and the breadth is {{ item.breadth }}
 
         loop:
           - { name: "square" , length: 20 , breadth: 30}
