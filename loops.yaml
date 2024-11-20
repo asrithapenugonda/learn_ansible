@@ -2,7 +2,7 @@
   hosts: all
   tasks:
     - name: demo on understanding loops
-      debug:
+      ansible.builtin.debug:
         msg: The name of the flower is {{item}}
 
       loops:
