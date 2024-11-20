@@ -1,19 +1,19 @@
 - name: Demo on loops
   hosts: all
   tasks:
-    - name: demo on understanding loops
-      ansible.builtin.debug:
-        msg: The name of the flower is {{ item }}
-      loop:
-        - Roses
-        - Marigold
-
-    - name: Demo on listed map
-      ansible.builtin.debug:
-        msg: The name and quantity of the fruit {{ item.name }} and {{ item.quantity }}
-      loop:
-        - { name: "banana" , quantity: 100}
-        - { name: "apple" , quantity: 150}
+#    - name: demo on understanding loops
+#      ansible.builtin.debug:
+#        msg: The name of the flower is {{ item }}
+#      loop:
+#        - Roses
+#        - Marigold
+#
+#    - name: Demo on listed map
+#      ansible.builtin.debug:
+#        msg: The name and quantity of the fruit {{ item.name }} and {{ item.quantity }}
+#      loop:
+#        - { name: "banana" , quantity: 100}
+#        - { name: "apple" , quantity: 150}
 
     - name: demo on three list map
       ansible.builtin.debug:
