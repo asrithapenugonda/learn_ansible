@@ -14,5 +14,14 @@
         msg: The name and quantity of the fruit {{item.quantity}}
 
       loop:
-        - {"bannana",150}
-        - {"apple",201}
+        - { name: "banana" , quantity: 100}
+        - { name: "apple" , quantity: 150}
+
+    - name: demo on three list map
+      debug:
+        msg:
+          the measurements are {{item.length.breadth}}
+
+        loop:
+          - { name: "square" , length: 20 , breadth: 30}
+          - { name: "rectangle" , length: 30, breadth: 20 }
