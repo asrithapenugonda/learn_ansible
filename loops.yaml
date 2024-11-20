@@ -10,7 +10,7 @@
         - Marigold
 
     - name: Demo on listed map
-      debug:
+      ansible.builtin.debug:
         msg: The name and quantity of the fruit {{ item.name }} and {{ item.quantity }}
 
       loop:
@@ -18,7 +18,7 @@
         - { name: "apple" , quantity: 150}
 
     - name: demo on three list map
-      debug:
+      ansible.builtin.debug:
         msg:
           the name is {{ item.name }}the length is  {{ item.length }} and the breadth is {{ item.breadth }}
 
