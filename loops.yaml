@@ -3,7 +3,7 @@
   tasks:
     - name: demo on understanding loops
       ansible.builtin.debug:
-        msg: The name of the flower is {{item}}
+        msg: The name of the flower is {{ item }}
 
       loop:
         - Roses
@@ -11,7 +11,7 @@
 
     - name: Demo on listed map
       debug:
-        msg: The name and quantity of the fruit {{item.quantity}}
+        msg: The name and quantity of the fruit {{ item.quantity }}
 
       loop:
         - { name: "banana" , quantity: 100}
@@ -20,7 +20,7 @@
     - name: demo on three list map
       debug:
         msg:
-          the measurements are {{item.length.breadth}}
+          the measurements are {{ item.length.breadth }}
 
         loop:
           - { name: "square" , length: 20 , breadth: 30}
