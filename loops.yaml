@@ -8,3 +8,11 @@
       loop:
         - Roses
         - Marigold
+
+    - name: Demo on listed map
+      debug:
+        msg: The name and quantity of the fruit {{item.quantity}}
+
+      loop:
+        - {"bannana",150}
+        - {"apple",201}
