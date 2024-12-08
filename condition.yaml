@@ -12,4 +12,4 @@
     - name: demo on condition in numbers
       debug:
         msg: "{{ a }}" is greater than 100
-      when: a| > 100
+      when: a | int > 100
