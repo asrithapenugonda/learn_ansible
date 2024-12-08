@@ -12,5 +12,5 @@
 
     - name: demo on condition in numbers
       debug:
-        msg: "{{ a }}" is greater than 100
+        msg:  a  is greater than 100
       when: a > 100
