@@ -5,5 +5,5 @@
   tasks:
     - name: demo on condition of string
       ansible.builtin.debug:
-      msg: "{{fruit_name}}"
-      when: fruit_name=apple
+        msg: "{{fruit_name}}"
+      when: fruit_name == "apple"
