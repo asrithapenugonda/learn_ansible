@@ -2,8 +2,14 @@
   hosts: all
   vars:
     fruit_name: apple
+
   tasks:
     - name: demo on condition of string
       ansible.builtin.debug:
         msg: "{{fruit_name}}"
       when: fruit_name == "apple"
+
+    - name: demo on condition in numbers
+      debug:
+        msg: {{a}} is greater than 100
+      when: a > 100
