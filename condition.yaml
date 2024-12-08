@@ -2,6 +2,7 @@
   hosts: all
   vars:
     fruit_name: apple
+    a: 200
 
   tasks:
     - name: demo on condition of string
@@ -12,4 +13,4 @@
     - name: demo on condition in numbers
       debug:
         msg: "{{ a }}" is greater than 100
-      when: a | int > 100
+      when: a > 100
