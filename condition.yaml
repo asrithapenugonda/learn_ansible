@@ -1,9 +1,9 @@
 - name: Demo on conditions
   hosts: all
   vars:
-    - apple
+    fruit_name: apple
   tasks:
     name: demo on condition of string
     ansible.builtin.debug:
-      msg: fruit_name is apple
+      msg: "{{fruit_name}}"
     when: fruit_name=apple
