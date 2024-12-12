@@ -1,5 +1,8 @@
 - name: demo on conditions
   hosts: all
+  vars:
+    b: 50
+    c: false
   tasks:
     - name: condition strings
       debug:
@@ -15,3 +18,13 @@
       debug:
         msg: "{{is_raining}},it's raining"
       when: is_raining | bool
+
+    - name: debug of b
+      debug:
+        msg: "{{b}}"
+      when : b < 100
+
+    - name: debug c
+      debug:
+        msg: "{{c}},he's liar"
+      when: c
