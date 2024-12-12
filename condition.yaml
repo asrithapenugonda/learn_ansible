@@ -8,4 +8,4 @@
     - name: demo on condition strings
       debug:
         msg: "{{fruit_name}}"
-      when: "fruit_name == apple"
+      when: fruit_name == "apple"
