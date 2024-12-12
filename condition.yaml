@@ -13,5 +13,5 @@
 
     - name: conditions on booleans
       debug:
-        msg: {{is_raining}},it's raining
+        msg: "{{is_raining}}",it's raining
       when: is_raining = true
