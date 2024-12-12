@@ -4,7 +4,7 @@
     - name: demo on condition[number]
       debug:
         msg: "{{a}}"
-      when: "a > 100"
+      when: a > 100
     - name: demo on condition strings
       debug:
         msg: {{fruit_name}}
