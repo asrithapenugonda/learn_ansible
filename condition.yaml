@@ -10,3 +10,8 @@
       debug:
         msg: "{{a}}"
       when: (a | int) > 100
+
+    - name: conditions on booleans
+      debug:
+        msg: {{is_raining}},it's raining
+      when: is_raining = true
