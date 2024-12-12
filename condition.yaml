@@ -1,11 +1,12 @@
 - name: demo on conditions
   hosts: all
   tasks:
-#    - name: demo on condition[number]
-#      debug:
-#        msg: "{{a}}"
-#      when: a > 100
-    - name: demo on condition strings
+    - name: condition strings
       debug:
         msg: "{{fruit_name}}"
       when: fruit_name == "apple"
+
+    - name: condition on number variable
+      debug:
+        msg: "{{a}}"
+      when: (a | int) > 100
