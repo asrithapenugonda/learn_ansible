@@ -1,5 +1,6 @@
-- name: Demo on parameters
+- name: Read a value from parameter store
   hosts: localhost
   connection: local
   tasks:
-    - debug: "{{ lookup('aws_ssm', 'test',region = 'us-east-1' ) }}"
+    - debug:
+        msg: "{{ lookup('aws_ssm', 'test', region='us-east-1' ) }}"
