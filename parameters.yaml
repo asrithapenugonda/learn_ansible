@@ -1,0 +1,4 @@
+- name: Demo on parameters
+  hosts: all
+  tasks:
+    - debug: "{{lookup('aws_ssm', 'test',region = 'us-east-1}}"
