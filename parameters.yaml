@@ -4,3 +4,12 @@
   tasks:
     - debug:
         msg: "{{ lookup('aws_ssm' , 'test', region='us-east-1')}}"
+
+
+
+- name: demo on parameter testing
+  hosts: local
+  connection: local
+  tasks:
+    - debug:
+        msg: "{{ lookup('aws_ssm' ,'parameter', region='us-east-1')}}"
