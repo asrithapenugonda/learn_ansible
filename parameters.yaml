@@ -1,10 +1,3 @@
-- name: demo on fetching parameter form aws parameter store
-  hosts: localhost
-  connection: local
-  tasks:
-    - debug:
-        msg: "{{ lookup('aws_ssm' , 'test', region='us-east-1')}}"
-
 
 
 - name: demo on parameter testing
