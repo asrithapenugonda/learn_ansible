@@ -6,6 +6,7 @@
       community.aws.aws_ssm_parameter_store:
         name: "{{ item.name }}"
         value: "{{ item.value }}"
-        loop:
-          - {name: "dev" , value: "devops321"}
-          - {name: "hello", value: "This is asritha"}
+      loop:
+        - {name: "hello" , value: "my name is asritha"}
+        - {name: "dev" , value: "devops321"}
+
