@@ -4,8 +4,8 @@
   tasks:
     - name: Create or update key/value pair in AWS SSM parameter store
       community.aws.aws.ssm_parameter:
-        name: "{{item.name}}"
-        value: "{{item.value}}"
+        name: {{item.name}}
+        value: {{item.value}}
         loop:
           - { name: "dev" , value: "devops321"}
           - { name: "hello", value: "This is asritha"}
