@@ -3,7 +3,7 @@
   hosts: local
   tasks:
     - name: Create or update key/value pair in AWS SSM parameter store
-      community.aws.aws.ssm_parameter:
+      community.aws.aws_ssm_parameter:
         name: "{{ item.name }}"
         value: "{{ item.value }}"
         loop:
